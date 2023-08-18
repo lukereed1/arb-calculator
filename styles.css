@@ -1,0 +1,71 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+.main {
+	width: 600px;
+	height: 320px;
+	background: orange;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.all-inputs {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+}
+
+#calc {
+	border: black solid 1px;
+	padding: 12px;
+	border-radius: 10px;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	font-size: 1.5rem;
+}
+.top-row {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.stakes {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.odds2-stake {
+	margin-top: 32px;
+}
+
+.results {
+	text-align: center;
+}
+
+input,
+.result-rectangle {
+	background: white;
+	height: 30px;
+	width: 170px;
+	border-radius: 5px;
+	border: 0.5px black solid;
+	margin-bottom: 12px;
+	text-align: center;
+	font-size: 1rem;
+}
