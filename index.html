@@ -5,50 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
 
-    <div class="main">
-        <div class="container">
-            <div class="all-inputs">
-                <div>
-                    <p>Odds 1</p>
-                    <input>
-                </div>
-                <div>
-                    <p>Odds 2</p>
-                    <input>
-                </div>
-                <div>
-                    <p>Total Stake</p>
-                    <input>
-                </div>
-                <button id="calc">Calculate</button>
-            </div>
-            <div class="stakes">
-                <p>Stake per side</p>
-                <input placeholder="">
-                <input class="odds2-stake" placeholder="">
-            </div>
-            <div class="results">
+    <body>
+        <h1>Arb Calculator</h1>
+        <div class="main">
+            <div class="container">
 
-                <p>Total Payout</p>
-                <input placeholder="">
-                <p>Total Profit</p>
-                <input placeholder="">
-                <p>ROI</p>
-                <input placeholder="">
+                <div class="all-inputs">
+                    <div class="input-item">
+                        <p>Odds 1</p>
+                        <input type="text" placeholder="Enter Odds 1">
+                    </div>
+                    <div class="input-item">
+                        <p>Odds 2</p>
+                        <input type="text" placeholder="Enter Odds 2">
+                    </div>
+                    <div class="input-item">
+                        <p>Total Stake</p>
+                        <input type="text" placeholder="Enter Total Stake">
+                    </div>
+                    <button id="calc">Calculate</button>
+                </div>
+
+                <div class="stakes">
+                    <p>Stake per side</p>
+                    <input type="text" placeholder="Stake 1 amount">
+                    <input type="text" class="odds2-stake" placeholder="Stake 2 amount">
+                </div>
+
+                <div class="results">
+                    <p>Total Payout</p>
+                    <input type="text" placeholder="Payout Amount">
+                    <p>Total Profit</p>
+                    <input type="text" placeholder="Profit Amount">
+                    <p>ROI</p>
+                    <input type="text" placeholder="ROI Percentage">
+                </div>
             </div>
         </div>
-    </div>
 
+        <script src="main.js"></script>
+    </body>
 
-    </div>
-    </div>
-
-    <script src="main.js"></script>
+</html>
+<script src="main.js"></script>
 </body>
 
 </html>
