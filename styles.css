@@ -24,6 +24,7 @@ h1 {
 	flex-direction: column;
 	padding: 20px;
 	border: 2px solid #3a91ee;
+	box-shadow: 3px 3px darkgray;
 }
 
 .all-inputs {
@@ -40,6 +41,7 @@ h1 {
 	border: black solid 1px;
 	padding: 12px;
 	border-radius: 10px;
+	font-size: 1.25rem;
 }
 
 p {
@@ -61,7 +63,7 @@ p {
 	text-align: center;
 }
 
-.odds2-stake {
+#odds2-stake {
 	margin-top: 32px;
 }
 

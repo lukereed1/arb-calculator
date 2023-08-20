@@ -1,39 +1,59 @@
-function arbitrageCalculator(odds1, odds2, totalStake) {
-	// Calculate implied probabilities
-	const impliedProbability1 = 1 / odds1;
-	const impliedProbability2 = 1 / odds2;
+const odds1 = document.getElementById("odds1");
+const odds2 = document.getElementById("odds2");
+const totalStake = document.getElementById("total-stake");
+const calcButton = document.getElementById("calc");
 
-	// Calculate the total implied probability
+const odds1Stake = document.getElementById("odds1-stake");
+const odds2Stake = document.getElementById("odds2-stake");
+
+const totalPayout = document.getElementById("total-payout");
+const profit = document.getElementById("profit");
+const roi = document.getElementById("roi");
+
+calcButton.addEventListener("click", () => calculate());
+
+function calculate() {
+	if (odds1.value === "" || odds2.value === "" || totalStake.value === "") {
+		alert("Please fill in the odds 1, odds 2, and total stake field ");
+		return;
+	}
+
+	if (isNaN(odds1.value) || isNaN(odds2.value) || isNaN(totalStake.value)) {
+		alert("Please enter a number into each field");
+		return;
+	}
+
+	// // Calculate implied probabilities
+	const impliedProbability1 = 1 / odds1.value;
+	const impliedProbability2 = 1 / odds2.value;
+
+	// // Calculate the total implied probability
 	const totalImpliedProbability = impliedProbability1 + impliedProbability2;
 
-	// If totalImpliedProbability is less than or equal to 1, it's an arbitrage opportunity
-	if (totalImpliedProbability <= 1) {
-		// Calculate individual stakes for both odds
-		const stake1 = totalStake * (impliedProbability1 / totalImpliedProbability);
-		const stake2 = totalStake * (impliedProbability2 / totalImpliedProbability);
+	// Calculate individual stakes for both odds
+	const odds1StakeAmount =
+		+totalStake.value *
+		(impliedProbability1 / totalImpliedProbability).toFixed(2);
+	const odds2StakeAmount =
+		+totalStake.value *
+		(impliedProbability2 / totalImpliedProbability).toFixed(2);
 
-		// Calculate potential payouts
-		const payout1 = stake1 * odds1;
-		const payout2 = stake2 * odds2;
+	odds1Stake.value = "$" + odds1StakeAmount;
+	odds2Stake.value = "$" + odds2StakeAmount;
 
-		return {
-			stake1: stake1,
-			stake2: stake2,
-			payout1: payout1,
-			payout2: payout2,
-			profit: Math.min(payout1, payout2) - totalStake,
-		};
-	} else {
-		return {
-			message: "Not an arbitrage opportunity",
-		};
-	}
+	// Calculate total payout
+	const totalPayoutAmount = (
+		(1 / totalImpliedProbability) *
+		+totalStake.value
+	).toFixed(2);
+
+	totalPayout.value = "$" + totalPayoutAmount;
+
+	// Calculate total profit
+	const totalProfit = (totalPayoutAmount - totalStake.value).toFixed(2);
+	profit.value = "$" + totalProfit;
+
+	// Calculate ROI percentage
+	const roiAmount = ((totalProfit / totalStake.value) * 100).toFixed(2);
+	roi.value = roiAmount + "%";
 }
-
-// Test the calculator
-const odds1 = 1.5;
-const odds2 = 3.5;
-const totalStake = 100;
-
-const result = arbitrageCalculator(odds1, odds2, totalStake);
-console.log(result);
