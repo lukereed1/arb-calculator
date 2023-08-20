@@ -2,14 +2,11 @@ const odds1 = document.getElementById("odds1");
 const odds2 = document.getElementById("odds2");
 const totalStake = document.getElementById("total-stake");
 const calcButton = document.getElementById("calc");
-
 const odds1Stake = document.getElementById("odds1-stake");
 const odds2Stake = document.getElementById("odds2-stake");
-
 const totalPayout = document.getElementById("total-payout");
 const profit = document.getElementById("profit");
 const roi = document.getElementById("roi");
-
 const arbLight = document.getElementById("arb-light");
 
 calcButton.addEventListener("click", () => calculate());
