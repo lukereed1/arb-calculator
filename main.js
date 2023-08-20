@@ -10,6 +10,8 @@ const totalPayout = document.getElementById("total-payout");
 const profit = document.getElementById("profit");
 const roi = document.getElementById("roi");
 
+const arbLight = document.getElementById("arb-light");
+
 calcButton.addEventListener("click", () => calculate());
 
 function calculate() {
@@ -56,4 +58,10 @@ function calculate() {
 	// Calculate ROI percentage
 	const roiAmount = ((totalProfit / totalStake.value) * 100).toFixed(2);
 	roi.value = roiAmount + "%";
+
+	if (roiAmount < 0) {
+		arbLight.style.background = "red";
+	} else {
+		arbLight.style.background = "#7CFC00";
+	}
 }

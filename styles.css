@@ -23,7 +23,7 @@ h1 {
 	justify-content: space-around;
 	flex-direction: column;
 	padding: 20px;
-	border: 2px solid #3a91ee;
+	border: 1.5px solid black;
 	box-shadow: 3px 3px darkgray;
 }
 
@@ -61,6 +61,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	align-items: center;
 }
 
 #odds2-stake {
@@ -95,4 +96,13 @@ button {
 
 button:hover {
 	background-color: #0056b3;
+}
+
+#arb-light {
+	height: 70px;
+	width: 70px;
+	background-color: white;
+	border-radius: 50%;
+	border: 1px solid black;
+	margin-top: 20px;
 }
