@@ -10,7 +10,7 @@ Betting/sports arbitrage is an example of arbitrage arising on betting markets d
                   
 ## Features
 
-- **Integration with Arb Finder Console App**: The calculator was designed to use in tandem with the [Arb Check Console App](https://github.com/lukereed1/arb-check-console) to source potential arbitrage opportunities.
+- **Integration with Arb Check Console App**: The calculator was designed to use in tandem with the [Arb Check Console App](https://github.com/lukereed1/arb-check-console) to source potential arbitrage opportunities.
 - **Arb Detection with Visual Indicator**: Determine if a set of odds presents an arbitrage opportunity at a glance — the light goes green if you can lock in profit and red if not.
 - **Stake Calculation**: Upon identifying arbs, receive precise stake amounts for each outcome to secure a profit.
 - **Bet outcomes**: Total payout, total profit and ROI percentage are calculated and shown.
