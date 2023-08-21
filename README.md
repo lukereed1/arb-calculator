@@ -21,13 +21,13 @@ To effectively use the Arbitrage Calculator, you'll need:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/arbitrage-calculator.git
+   git clone https://github.com/lukereed1/arb-calculator.git
    ```
 
 2. **Navigate to the Repository Folder**:
 
    ```bash
-   cd arbitrage-calculator
+   cd arb-calculator
    ```
 
 3. **Open the HTML File**:
