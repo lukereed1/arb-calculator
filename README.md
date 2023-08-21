@@ -4,7 +4,7 @@ The Arbitrage Calculator is tool designed to assist punters in identifying and c
 
 ## Features
 
-- **Integration with Arb Finder Console App**: The calculator was designed to use in tandem with the [Arb Check Console App](https://github.com/your-username/arb-finder-console-app) to source potential arbitrage opportunities.
+- **Integration with Arb Finder Console App**: The calculator was designed to use in tandem with the [Arb Check Console App](https://github.com/lukereed1/arb-check-console) to source potential arbitrage opportunities.
 - **Arb Detection with Visual Indicator**: Determine if a set of odds presents an arbitrage opportunity at a glance — the light goes green if you can lock in profit and red if not.
 - **Stake Calculation**: Upon identifying arbs, receive precise stake amounts for each outcome to secure a profit.
 
