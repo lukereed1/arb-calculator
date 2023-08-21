@@ -54,7 +54,7 @@ To effectively use the Arbitrage Calculator, you'll need:
 3. **Evaluate**:
 
    - Hit the 'Calculate' button.
-   - Observe the light: green indicates profit can be locked in, while red suggests otherwise. The calculator will present the stake amounts for each outcome.
+   - Observe the light: green indicates profit can be locked in, while red suggests otherwise. The calculator will present the stake amounts for each side of the bet.
    - Total payout, profit and ROI percentage are also shown.
 4. **Action**:
    - If the event is arbable (green light), utilize the given stake amounts when placing your bets with the respective bookmakers.
