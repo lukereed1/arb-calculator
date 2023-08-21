@@ -9,6 +9,7 @@ The Arbitrage Calculator is tool designed to assist punters in identifying and c
 - **Integration with Arb Finder Console App**: The calculator was designed to use in tandem with the [Arb Check Console App](https://github.com/lukereed1/arb-check-console) to source potential arbitrage opportunities.
 - **Arb Detection with Visual Indicator**: Determine if a set of odds presents an arbitrage opportunity at a glance — the light goes green if you can lock in profit and red if not.
 - **Stake Calculation**: Upon identifying arbs, receive precise stake amounts for each outcome to secure a profit.
+- **Bet outcomes**: Total payout, total profit and ROI percentage are calculated and shown.
 
 ## Prerequisites
 
@@ -49,7 +50,7 @@ To effectively use the Arbitrage Calculator, you'll need:
 3. **Evaluate**:
 
    - Hit the 'Calculate' button.
-   - Observe the light: green indicates profit can be locked in, while red suggests otherwise. If it's green, the calculator will also present the stake amounts for each outcome.
-
+   - Observe the light: green indicates profit can be locked in, while red suggests otherwise. The calculator will present the stake amounts for each outcome.
+   - Total payout, profit and ROI percentage are also shown.
 4. **Action**:
    - If the event is arbable (green light), utilize the given stake amounts when placing your bets with the respective bookmakers.
