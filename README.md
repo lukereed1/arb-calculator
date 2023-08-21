@@ -3,7 +3,11 @@
 The Arbitrage Calculator is tool designed to assist punters in identifying and capitalizing on arbitrage opportunities in sports betting. When given odds for an event, this calculator evaluates and displays the exact stake amounts required to ensure a guaranteed profit. A light indicator feature quickly tells you whether the event can lock in profit or not.
 
 [👉🏼 Test it here 👈🏼](https://lukereed1.github.io/arb-calculator/)
-                        
+
+## What is Arbitrage?
+
+Betting/sports arbitrage is an example of arbitrage arising on betting markets due to either bookmakers' differing opinions on event outcomes or errors. When conditions allow, by placing one bet per each outcome with different betting companies, the bettor can make a profit regardless of the outcome.
+                  
 ## Features
 
 - **Integration with Arb Finder Console App**: The calculator was designed to use in tandem with the [Arb Check Console App](https://github.com/lukereed1/arb-check-console) to source potential arbitrage opportunities.
